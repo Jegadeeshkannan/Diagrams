@@ -18,6 +18,9 @@
         <mxCell id="UbfLk0bQusmyIFXjgGm9-3" value="&lt;b&gt;PilotCarCore&lt;/b&gt;&lt;br&gt;PilotCarOrderProcessingServiceImpl&lt;br&gt;assignProcessId(PilotCarOrderView)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="350" width="210" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbfLk0bQusmyIFXjgGm9-5" target="UbfLk0bQusmyIFXjgGm9-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="UbfLk0bQusmyIFXjgGm9-5" value="&lt;b&gt;RCSProcessService&lt;/b&gt;&lt;br&gt;ProcessLifeCycleServiceImpl&lt;br&gt;initiateProcess(String processName, Map processParams, long userId)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="305" y="270" width="185" height="80" as="geometry" />
         </mxCell>
@@ -35,6 +38,33 @@
         </mxCell>
         <mxCell id="UbfLk0bQusmyIFXjgGm9-11" value="Low level Design Diagram for custom process Engine&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="30" y="130" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbfLk0bQusmyIFXjgGm9-20" target="UbfLk0bQusmyIFXjgGm9-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbfLk0bQusmyIFXjgGm9-20" target="UbfLk0bQusmyIFXjgGm9-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-20" value="&lt;b&gt;RCSProcessService&lt;/b&gt;&lt;br&gt;ProcessEngine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="185" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-22" value="XML Parser to parse&amp;nbsp; processdefinition.xml" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="553" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbfLk0bQusmyIFXjgGm9-24" target="UbfLk0bQusmyIFXjgGm9-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-24" value="Program to make transition to different nodes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="552.5" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UbfLk0bQusmyIFXjgGm9-26" target="UbfLk0bQusmyIFXjgGm9-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-26" value="Call to ProcessActionHandlers and ProcessDecisionHandlers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="400" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UbfLk0bQusmyIFXjgGm9-28" value="Permits DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="770" y="260" width="60" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
